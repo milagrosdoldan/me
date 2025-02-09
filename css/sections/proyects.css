@@ -1,0 +1,220 @@
+.proyects {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    align-items: center;
+    background-color:var(--light--body-bg);  
+    padding-bottom: 5rem; 
+}
+
+.proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
+    height: 450px;
+    position: absolute;
+    width: 750px;
+    border-radius: 3rem;
+    will-change: transform;
+    transition: transform 1s ease;
+}
+
+.proyects-img-1 {
+    left: -20px;
+    width: 650px;
+    z-index: 100;
+    margin-top: -4rem;
+    transform: translate3d(-370px, 0px, 0px) rotateZ(-25deg);
+    
+}
+
+.proyects-img-2 {
+    width: 650px;
+    left: 10px;
+    transform: translate3d(-160px, 0px, 0px) rotateZ(-20deg);
+}
+
+.proyects-img-3 {
+    right: 10px;
+    width: 650px;
+    transform:  translate3d(250px, 0px, 0px) rotateZ(20deg);
+    transition: transform 1s ease;
+}
+
+
+.proyects-img-4 {
+    right: -40px;
+    width: 650px;
+    z-index: 100;
+    transform: translate3d(370px, 0px, 0px) rotateZ(25deg);
+    margin-top: -4rem;
+    transition: transform 1.5s ease;
+}
+
+.img-container-left, .img-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-proyect {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-proyect > p{
+    opacity: 0;
+    font-family: "Bebas Neue", serif;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 5px;
+    color: var(----light--heading-black);
+    line-height: .9;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .proyects {
+        height: auto;
+    }
+    .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
+        width: 100px;
+        height: 100px;
+        border-radius: 1rem;
+        transform: none;
+    }
+
+    .proyects-img-1 {
+        transform: translate3d(0px, 0px, 0px) rotateZ(-15deg);
+        left: -30px;
+    }
+
+    .proyects-img-2 {
+        left: -30px;
+    }
+
+    .proyects-img-3 {
+        right: -30px;
+    }
+
+    .proyects-img-4 {
+        right: -30px;
+    }
+
+    .text-proyect > p {
+        z-index: 1000;
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .proyects {
+        height: 75vh;
+    }
+    .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
+        width: 350px;
+        height: 350px;
+        border-radius: 1rem;
+        transform: none;
+    }
+    .proyects-img-1 {
+        left: -150px
+    }
+
+    .proyects-img-2 {
+        left: -150px;
+    }
+
+    .proyects-img-3 {
+        right: -150px;
+    }
+
+    .proyects-img-4 {
+        right: -150px;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .proyects {
+        height: 85vh;
+    }
+    .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
+        width: 350px;
+        height: 350px;
+        border-radius: 1rem;
+        transform: none;
+    }
+    .proyects-img-1 {
+        left: -150px
+    }
+
+    .proyects-img-2 {
+        left: -150px;
+    }
+
+    .proyects-img-3 {
+        right: -150px;
+    }
+
+    .proyects-img-4 {
+        right: -150px;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .proyects {
+        height: 60vh;
+    }
+    .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
+        height: 450px;
+        width: 650px;
+        border-radius: 1rem;
+        transform: none;
+    }
+    .proyects-img-1 {
+        left: -150px
+    }
+
+    .proyects-img-2 {
+        left: -150px;
+    }
+
+    .proyects-img-3 {
+        right: -150px;
+    }
+
+    .proyects-img-4 {
+        right: -150px;
+    }
+}
+
+
+
+@keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: 0.5em;
+      transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+              transform: translateZ(0);
+      filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }

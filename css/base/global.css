@@ -1,0 +1,130 @@
+*  {
+    cursor: none;
+}
+
+html {
+    scrollbar-color: transparent;
+    scrollbar-width:thin;
+    scroll-behavior:smooth;
+    margin: 0px !important
+}
+
+:root {
+    ----light--heading-black: #434548;
+    --light--body-bg: #eef4f4;
+    --light--paragraph-black: #404145;
+    --light--heading-black: #434548;
+    --black: black;
+    --desktop-separator: 5em;
+    --desktop-padding-x: 2em;
+    --mobile-separator: 3em;
+    --mobile-padding-x: 1em;
+    --light--heading-back-text: white;
+    --light--counter-bg: #e1eae9;
+    --light--drop-menu-layer-bg: white;
+    --white: white;
+    --light--button-bg: #a6a9b033;
+    --dark--body-bg: #121315;
+    --dark--heading-white: #e0eeee;
+    --dark--paragraph-white: #c5cfcf;
+    --dark--heading-back-text: #252525;
+    --dark--counter-bg: #17181c;
+    --dark--drop-menu-layer-bg: #1b1b1b;
+    
+}
+
+body {
+    margin:0px
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: contain;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    background-color: #eef4f4;
+    overflow: hidden;
+    position: fixed;
+    margin: -8px !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;   
+} 
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+    background-color: black;
+    perspective:1000px
+}
+
+
+.cursor-wrapper {
+    position: fixed; /* Esto asegura que cubra toda la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Esto asegura que el ancho sea el de toda la ventana */
+    height: 100vh; /* Esto asegura que la altura sea la de toda la ventana */
+    z-index: 1000; /* Asegúrate de que tenga un alto índice z para estar sobre los demás elementos */
+    pointer-events: none; /* Esto asegura que no interfiera con la interacción de los demás elementos */
+    mix-blend-mode: difference; /
+}
+
+.cursor {
+    position: absolute;
+}
+
+.cursor-main {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: width 0.2s ease-out, height 0.2s ease-out, filter 0.2s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.a-target {
+    text-decoration: none;
+}
+
+.button {
+    background-color: transparent;
+    border-radius: 2.5em;
+    border: 1px solid #404145;
+    min-height: 68px;
+    font-family: "Syne", serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    padding:0.5em 2.5em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #404145;
+
+}
+
+.button:hover > p:hover {
+    font-weight: 700; 
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+        padding: 0.0em 2em !important
+    }
+}

@@ -1,0 +1,117 @@
+.inspirational {
+    height: 105vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--light--body-bg);    
+    gap: 4rem;
+    z-index: 10;
+}
+
+.inspirational > h1 {
+    font-family: "Bebas Neue", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    display: inline;
+    font-size: 4rem;
+    margin: 0px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(----light--heading-black);
+    opacity: 0;
+    text-align-last: center;
+}
+
+.phrases {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.phrases > div {
+    width: 100%;
+    min-height: fit-content;
+}
+
+.phrases > div > p {
+    text-align: center;
+}
+
+.phrase-1, .phrase-2, .phrase-3 {
+    transform: rotate(2deg) translateY(0);
+    padding: .5rem;
+    font-size: 1.5rem;
+    font-family: "Syne", serif;
+    color: white;
+    transition: transform 300ms ease-in-out;
+}
+
+.phrase-2 {
+    background-color: black;
+    transition-duration: 300ms;
+}
+
+.phrase-3 {
+    background-color: var(--light--heading-black);
+}
+
+.phrase-1 {
+    background-color:var(--light--counter-bg);
+    color:black
+}
+
+@keyframes scale-up-ver-bottom {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .inspirational {
+        height: auto;
+        padding-top: 5rem;
+    }
+    .inspirational > h1 {
+        font-size: 2rem;
+    }
+    .phrase-1, .phrase-2, .phrase-3 {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .inspirational {
+        height: 110vh;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .inspirational {
+        padding-top: 5rem;
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px)  {
+    .inspirational {
+        padding-top: 5rem;
+        height: 50vh;
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    .inspirational {
+        height: 60vh;
+    }
+}
