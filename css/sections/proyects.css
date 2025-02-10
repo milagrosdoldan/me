@@ -84,7 +84,7 @@
 
 @media only screen and (max-width: 600px) {
     .proyects {
-        height: auto;
+        height: 50vh;
     }
     .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
         width: 100px;
@@ -174,7 +174,7 @@
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     .proyects {
-        height: 60vh;
+        height: 80vh;
     }
     .proyects-img-1, .proyects-img-2, .proyects-img-3, .proyects-img-4 {
         height: 450px;

@@ -1,5 +1,6 @@
 const main = document.querySelector('.main');
 const mediaQuery600px = window.matchMedia("(max-width: 600px)");
+const mediaQuery1024px = window.matchMedia("(min-width: 1024px");
 const heroSection = document.querySelector('.hero');
 const images = document.querySelectorAll('.hero img');
 const title = document.querySelector('.hero-title');
@@ -115,6 +116,7 @@ const handleInspirationalPhrases = (scroll) => {
 }
 
 const handleImgHeroSection = (scroll) => {
+
     const translateZ = -4.9085 + (-0.06145) * (scroll - 240);
     const rotateZ = 1.47255 + 0.01843 * (scroll - 240);
     heroSection.style.transform = scroll === 0 ? `translate3d(0px, 0px, 0vh) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)` : `translate3d(0px, 0px, ${translateZ}vh) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(${rotateZ}deg) skew(0deg, 0deg)`;
@@ -231,7 +233,9 @@ window.addEventListener('scroll', () => {
     handleTestimonialCards(scrollTop);
     handleInspirationalPhrases(scrollTop);
     handleTitles(scrollTop);
-    handleImgHeroSection(scrollTop);
+    if (mediaQuery1024px.matches) {
+        handleImgHeroSection(scrollTop);
+    }
 
 });
 

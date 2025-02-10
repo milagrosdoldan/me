@@ -152,11 +152,9 @@
     }
     .accordions {
         width: 100%;
-        overflow: auto;
         height: 100%;
         gap: 1rem;
-        scrollbar-width:none;
-        scroll-behavior: smooth;
+     
     }
     .accordion > p {
         font-size: 0.8rem;
@@ -171,7 +169,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
     .faqs {
         height: 90vh;
     }

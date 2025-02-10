@@ -231,6 +231,10 @@
 
 
 @media only screen and (max-width: 600px) {
+    .hero{
+        position: relative;
+        margin-bottom: 0px;
+    }
     .hero-img-1 {
         border-radius: 2rem;
         position: absolute;
@@ -242,7 +246,6 @@
     }
     
     .hero-img-2 {
-      
         position: absolute;
         border-radius: 2rem;
         bottom: -180px;
@@ -269,7 +272,7 @@
     }
 
     .text, .text-1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .hero-title{
@@ -278,12 +281,17 @@
 
     .hero-title > p {
         text-align: center;
-        width: 80%;
+        width: 75%;
     }
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    .hero{
+        position: relative;
+        margin-bottom: 0px;
+    }
 
     .hero-img-3{
         left: -425px;
@@ -297,8 +305,11 @@
 
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .hero{
+        position: relative;
+        margin-bottom: 0px;
+    }
     .hero-img-4{
         right: -350px;
     }
-
 }

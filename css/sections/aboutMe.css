@@ -151,6 +151,9 @@
 
 
 @media only screen and (max-width: 600px) {
+    .about-me{ 
+        padding-top: 20rem;
+    }
     .about-me-header{
         width: 100%;
         height: auto;
@@ -187,7 +190,10 @@
         grid-column:span 1;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .about-me{ 
+        padding-top: 20rem;
+    }
     .about-me-header {
         width: 100%;
     }

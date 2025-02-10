@@ -79,7 +79,6 @@
 @media only screen and (max-width: 600px) {
     .inspirational {
         height: auto;
-        padding-top: 5rem;
     }
     .inspirational > h1 {
         font-size: 2rem;

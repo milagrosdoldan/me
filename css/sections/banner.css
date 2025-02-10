@@ -58,3 +58,9 @@
 .banner-loop-box {
     animation: moveText 20s linear infinite;
 }
+
+@media only screen and (max-width: 600px) {
+    .banner-loop-text.line{
+        font-size: 14vw;
+    }   
+}

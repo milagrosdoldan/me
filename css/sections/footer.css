@@ -126,6 +126,10 @@ footer {
         text-align: center;
     }
 
+    .loop-text.line{
+        font-size: 14vw;
+    }
+
     .button-icon-1-footer, .button-icon-2-footer, .button-icon-3-footer {
         width: 40px;
     }
